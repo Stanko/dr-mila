@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* outline: 1px solid rgba(0 0 255 / 0.1); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Vollkorn', serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+body:not(.scrolled) header {
+  box-shadow: transparent 0 0 0;
+}
+
+*:focus-visible {
+  outline: 2px solid rgb(5 150 105);
+  outline-offset: 2px;
+}
+
+@media (min-width: 1024px) {
+  .narrow-service {
+    max-width: 30%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fly-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fly-out {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+dialog::backdrop {
+  /* backdrop-filter: blur(0.25rem); */
+  /* background-color: rgb(5, 5, 5, 0.8); */
+  background-color: transparent;
+}
+
+dialog:modal {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dialog-content {
+  animation: fly-in 250ms ease-out forwards;
+}
+
+.dialog-backdrop {
+  animation: fade-in 250ms ease-out forwards;
+}
+
+dialog.closing .dialog-content {
+  animation: fly-out 250ms ease-in forwards;
+}
+
+dialog.closing .dialog-backdrop {
+  animation: fade-out 250ms ease-in forwards;
+}

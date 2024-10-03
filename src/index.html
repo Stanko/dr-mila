@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ordinacija Dr Mila</title>
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-50 w-full overflow-x-hidden">
+  <!-- Header -->
+  <header class="fixed top-0 w-full left-0 z-10 bg-gray-50 bg-opacity-80 backdrop-blur-md shadow-sm transition-all">
+    <div class="h-1 bg-gradient-to-r from-emerald-400 to-blue-400"></div>
+    <div class="max-w-6xl mx-auto px-6 md:px-8">
+      <div class="py-4 flex items-center justify-between rounded-full">
+        <a href="#">
+          <div class="w-8 h-8 rounded-full bg-emerald-600"></div>
+        </a>
+        <button class="menu-toggle md:hidden">
+          <span class="sr-only">Toggle menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-7 w-7"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </button>
+        <nav class="items-center gap-4 hidden md:flex">
+          <a href="#" class="text-gray-500 hover:text-gray-700 hover:underline underline-offset-2">Instagram</a>
+          <a href="#" class="text-gray-500 hover:text-gray-700 hover:underline underline-offset-2">Cenovnik</a>
+          <button type="button"
+            class="px-3 py-1 rounded-full bg-emerald-600 border border-emerald-700 transition-colors text-sm font-semibold text-white shadow-sm hover:bg-emerald-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">
+            Zakažite pregled
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Background blurred pattern -->
+  <div class="w-full absolute overflow-x-hidden top-0 h-full -z-10">
+    <div class="max-w-6xl mx-auto flex flex-col gap-12 items-center -rotate-45" style="translate: 0 30vh">
+      <div class="blur-3xl bg-blue-200 h-12 rounded-full w-1/2"></div>
+      <div class="blur-3xl bg-emerald-200 h-12 rounded-full w-full"></div>
+      <div class="blur-3xl bg-purple-200 h-12 rounded-full w-1/3"></div>
+    </div>
+  </div>
+
+  <main class="max-w-6xl mt-28 md:mt-40 mx-auto relative px-6 md:px-8">
+    <!-- Hero -->
+    <section class="flex flex-col gap-8 md:flex-row md:items-center">
+      <div class="flex-1">
+        <!-- Title --->
+        <h1 class="text-balance text-5xl md:text-6xl tracking-tight">
+          Ordinacija
+          <span class="bg-gradient-to-r from-emerald-600 to-blue-400 bg-clip-text text-transparent">
+            Dr&nbsp;Mila
+          </span>
+        </h1>
+
+        <!-- Intro --->
+        <p class="my-8 text-lg md:text-xl text-gray-500 max-w-1/2 md:max-w-md">
+          Ljubazno osoblje naše stomatološke ordinacije pobrinuće se da Vaša
+          poseta bude obostrano pozitivno iskustvo. Naši pacijenti su deo naše
+          porodice i zato je stomatološka ordinacija „Dr Mila“ mesto gde Vam je
+          zagarantovana vrhunska i profesionalna usluga.
+        </p>
+
+        <!-- Zakazivanje --->
+        <div class="flex flex-wrap gap-2 items-center">
+          <button type="button"
+            class="px-8 py-2.5 xl:px-10 xl:py-3 rounded-full bg-emerald-600 border border-emerald-700 transition-colors text-sm lg:text-base font-semibold text-white shadow-sm hover:bg-emerald-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">
+            Zakažite pregled
+          </button>
+          <span class="text-gray-500">ili</span>
+          <button type="button"
+            class="px-8 py-2.5 xl:px-10 xl:py-3 rounded-full bg-white border border-gray-300 transition-colors text-sm lg:text-base font-semibold text-gray-900 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-300"
+            data-cal-link="stanko-tadic-zwhbjn/30min" data-cal-namespace="30min"
+            data-cal-config='{"layout":"month_view","theme":"light"}'>
+            Besplatnu konsultaciju
+          </button>
+        </div>
+      </div>
+      <!-- Hero image -->
+      <div class="flex-1 relative">
+        <img alt="" class="rounded-xl shadow-md"
+          src="https://atelierdental.com.au/wp-content/uploads/2024/04/062A9944.jpg" />
+
+        <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Separator -->
+    <svg class="my-16 md:my-24 mx-auto max-w-80 md:max-w-md" viewBox="0 0 502 32" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <g fill="url(#separator-gradient)">
+        <path
+          d="M234.599 15.9993C243.436 15.9993 250.599 8.83701 250.599 0C250.599 8.83701 257.762 15.9993 266.599 15.9993C257.762 15.9993 250.599 23.163 250.599 32C250.599 23.163 243.436 15.9993 234.599 15.9993Z" />
+        <path
+          d="M216.203 16C220.621 16 224.203 12.419 224.203 8C224.203 12.419 227.784 16 232.203 16C227.784 16 224.203 19.5823 224.203 24C224.203 19.5823 220.621 16 216.203 16Z" />
+        <path
+          d="M277.289 8C277.289 12.419 273.708 16 269.29 16C273.708 16 277.289 19.5823 277.289 24C277.289 19.5823 280.871 16 285.29 16C280.871 16 277.289 12.419 277.289 8Z" />
+        <path
+          d="M6.74629 10C9.71924 10 12.1876 12.1619 12.6636 15H208C208.552 15 209 15.4477 209 16C209 16.5523 208.552 17 208 17H12.6636C12.1876 19.8381 9.71924 22 6.74629 22C3.43269 22 0.746582 19.3143 0.746582 16C0.746582 12.6857 3.43269 10 6.74629 10Z" />
+        <path
+          d="M489.895 17H294C293.448 17 293 16.5523 293 16C293 15.4477 293.448 15 294 15H489.895C490.372 12.1619 492.84 10 495.813 10C499.127 10 501.812 12.6857 501.812 16C501.812 19.3143 499.127 22 495.813 22C492.84 22 490.372 19.8381 489.895 17Z" />
+      </g>
+      <defs>
+        <linearGradient id="separator-gradient" x1="0.075" y1="16" x2="500" y2="16" gradientUnits="userSpaceOnUse">
+          <stop offset="0.375" stop-color="#479784" />
+          <stop offset="1" stop-color="#6FA3F0" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <!-- Services -->
+    <section class="">
+      <h2 class="text-center text-balance text-4xl md:text-5xl tracking-tight mb-8">
+        Usluge
+      </h2>
+
+      <p class="my-8 text-lg text-center text-gray-500 max-w-xl mx-auto">
+        Ljubazno osoblje naše stomatološke ordinacije pobrinuće se da Vaša
+        poseta bude obostrano pozitivno iskustvo.
+      </p>
+
+      <div class="flex flex-col md:flex-row gap-2 md:gap-4">
+        <!-- Hirurgija -->
+        <button
+          class="narrow-service group relative overflow-hidden flex-1 rounded-md rounded-tl-3xl rounded-tr-3xl md:rounded-tr-md md:rounded-bl-3xl bg-white shadow transition-all hover:shadow-xl hover:-translate-y-1 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-teal-600 md:my-16">
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-white to-teal-50 opacity-0 group-hover:opacity-100 transition-all">
+          </div>
+          <div class="relative px-4 py-8 flex flex-col items-center">
+            <svg viewBox="0 0 360 359" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 text-teal-600 ">
+              <g fill="currentColor">
+                <path
+                  d="M177.761 208.907C175.575 210.147 174.241 212.467 174.241 214.987V238.427C173.001 241.867 168.828 253.187 162.975 264.413C153.668 282.307 145.988 288.68 141.895 288.68C132.895 288.68 118.108 262.84 109.668 238.333V214.867C109.668 212.347 108.321 210.027 106.148 208.773L82.7481 195.4C75.3214 190.413 70.2281 181.32 69.4148 171.573V155.973C69.4148 152.093 66.2815 148.96 62.4015 148.96C56.5748 148.96 51.8281 144.213 51.8281 138.387V110.507C51.8281 104.68 56.5748 99.9333 62.4015 99.9333H110.268C112.935 115.053 126.148 126.573 142.015 126.573C157.881 126.573 171.095 115.053 173.761 99.9333H221.561C227.361 99.9333 232.081 104.653 232.081 110.453V138.453C232.081 144.253 227.361 148.96 221.561 148.96C217.695 148.96 214.561 152.093 214.561 155.973V171.573C213.735 181.347 208.681 190.44 201.295 195.4L177.761 208.907ZM69.4148 62.0666C69.4148 35.5733 90.9746 14.0267 117.455 14.0267H166.721C193.095 14.0267 214.561 35.48 214.561 61.8533V85.92H173.135C171.828 81.0533 169.388 76.5333 165.948 72.72C163.361 69.8533 158.921 69.6267 156.055 72.2267C153.175 74.8134 152.948 79.2533 155.548 82.12C158.575 85.4666 160.241 89.7999 160.241 94.3333C160.241 104.373 152.068 112.547 142.015 112.547C131.961 112.547 123.788 104.373 123.788 94.3333C123.788 89.9866 125.348 85.7732 128.161 82.4799C130.681 79.5465 130.335 75.1199 127.402 72.5999C124.455 70.0799 120.028 70.4267 117.521 73.3601C114.375 77.0267 112.135 81.32 110.895 85.92H69.4148V62.0666ZM257.481 270.253C257.455 270.24 257.428 270.227 257.402 270.213L193.068 244.333C190.722 243.347 188.961 241.307 188.255 238.8V219.04L208.468 207.453C208.602 207.373 208.721 207.293 208.855 207.213C220.095 199.8 227.455 186.773 228.548 172.4C228.575 172.213 228.575 172.04 228.575 171.853V161.96C238.695 158.933 246.095 149.547 246.095 138.453V110.453C246.095 99.36 238.695 89.9599 228.575 86.9333V61.8533C228.575 27.7466 200.828 -8.38212e-05 166.721 -8.38212e-05H117.455C83.2413 -8.38212e-05 55.4015 27.8399 55.4015 62.0666V86.9333C45.2415 89.9599 37.8148 99.3867 37.8148 110.507V138.387C37.8148 149.52 45.2415 158.933 55.4015 161.96V171.853C55.4015 172.04 55.4014 172.213 55.4148 172.4C56.5214 186.747 63.9082 199.76 75.2015 207.213C75.3215 207.293 75.4547 207.373 75.5747 207.453L95.6546 218.933V238.707C94.9613 241.24 93.1615 243.32 90.7348 244.347L26.4015 270.213C26.3615 270.227 26.3347 270.24 26.308 270.253C11.0013 276.627 0.321289 293.507 0.321289 311.293V351.867C0.321289 355.733 3.45462 358.88 7.32129 358.88H163.855C167.721 358.88 170.855 355.733 170.855 351.867C170.855 348 167.721 344.867 163.855 344.867H14.3348V311.293C14.3348 299.213 21.6282 287.413 31.6682 283.2L96.0148 257.32C96.0415 257.32 96.0681 257.307 96.0947 257.293C97.8281 256.573 99.4413 255.64 100.908 254.547C102.908 259.36 105.455 265.067 108.428 270.813C119.535 292.267 130.481 302.693 141.895 302.693C153.308 302.693 164.268 292.293 175.415 270.88C178.401 265.133 180.975 259.427 182.988 254.6C184.428 255.68 186.015 256.587 187.708 257.293C187.735 257.307 187.761 257.32 187.788 257.32L252.121 283.2C262.175 287.413 269.455 299.213 269.455 311.293V344.867H211.055C207.188 344.867 204.055 348 204.055 351.867C204.055 355.733 207.188 358.88 211.055 358.88H276.468C280.335 358.88 283.481 355.733 283.481 351.867V311.293C283.481 293.507 272.788 276.627 257.481 270.253Z" />
+                <path
+                  d="M142.081 62.0799H142.014C138.148 62.0799 135.001 65.2267 135.001 69.0934C135.001 72.9601 138.148 76.1067 142.014 76.1067H142.081C145.961 76.1067 149.094 72.9601 149.094 69.0934C149.094 65.2267 145.961 62.0799 142.081 62.0799Z" />
+                <path
+                  d="M193.348 346.907C192.042 345.613 190.242 344.867 188.402 344.867C186.548 344.867 184.748 345.613 183.442 346.907C182.135 348.213 181.388 350.027 181.388 351.867C181.388 353.707 182.135 355.52 183.442 356.827C184.748 358.12 186.548 358.88 188.402 358.88C190.242 358.88 192.042 358.12 193.348 356.827C194.655 355.52 195.402 353.707 195.402 351.867C195.402 350.027 194.655 348.213 193.348 346.907Z" />
+
+              </g>
+            </svg>
+
+            <h3 class="text-2xl text-gray-800 my-2">Hirurgija</h3>
+            <p class="text-md text-gray-600">
+              Anim aute id magna aliqua ad ad non
+              deserunt sunt. Qui irure qui lorem cupidatat commodo.
+            </p>
+          </div>
+        </button>
+
+
+        <div class="flex-1 flex gap-2 md:gap-4 flex-col">
+          <!-- Opšta stomatologija -->
+          <button
+            class="group relative overflow-hidden rounded-md md:rounded-t-3xl bg-white shadow transition-all hover:shadow-xl hover:-translate-y-1 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-white to-blue-50 opacity-0 group-hover:opacity-100 transition-all">
+            </div>
+            <div class="relative px-4 py-12 flex flex-col items-center">
+              <svg viewBox="0 0 360 359" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 text-blue-600 ">
+                <g fill="currentColor">
+                  <path
+                    d="M309.161 175.08C291.548 197.267 283.868 234.84 276.428 271.173C269.028 307.4 261.375 344.867 245.868 344.867C230.175 344.867 221.108 312.24 213.828 286.04C205.548 256.293 198.415 230.6 180.081 230.6C161.748 230.6 154.601 256.293 146.335 286.04C139.041 312.24 129.988 344.867 114.295 344.867C98.7881 344.867 91.1213 307.4 83.7213 271.173C76.2946 234.84 68.6013 197.267 50.988 175.08C14.6546 129.32 14.6546 111.107 14.6546 91.8267C14.6546 48.9201 49.5615 14.0267 92.4682 14.0267C124.201 14.0267 139.508 34.4667 151.801 50.9067C160.641 62.7067 168.268 72.8934 180.081 72.8934C191.881 72.8934 199.508 62.7067 208.348 50.9067C220.655 34.4667 235.961 14.0267 267.695 14.0267C310.601 14.0267 345.495 48.9201 345.495 91.8267C345.495 111.107 345.495 129.32 309.161 175.08ZM267.695 -8.38212e-05C228.948 -8.38212e-05 210.561 24.5734 197.135 42.5067C190.815 50.92 184.868 58.8799 180.081 58.8799C175.295 58.8799 169.335 50.92 163.028 42.5067C149.601 24.5734 131.215 -8.38212e-05 92.4682 -8.38212e-05C41.8282 -8.38212e-05 0.641602 41.2001 0.641602 91.8267C0.641602 116.64 3.46785 137.76 40.0145 183.8C55.5478 203.36 63.2146 240.88 69.988 273.987C74.3213 295.187 78.4148 315.213 84.2682 330.373C86.9882 337.427 95.2681 358.88 114.295 358.88C126.615 358.88 136.548 350.893 144.655 334.493C150.961 321.747 155.468 305.507 159.842 289.8C163.428 276.88 166.815 264.68 170.815 255.867C174.095 248.613 177.388 244.627 180.081 244.627C182.775 244.627 186.068 248.613 189.348 255.867C193.335 264.68 196.721 276.88 200.321 289.8C204.681 305.507 209.201 321.747 215.495 334.493C223.601 350.893 233.535 358.88 245.868 358.88C264.881 358.88 273.161 337.427 275.881 330.373C281.735 315.213 285.828 295.187 290.175 273.987C296.935 240.88 304.615 203.36 320.148 183.8C356.694 137.76 359.521 116.64 359.521 91.8267C359.521 41.2001 318.321 -8.38212e-05 267.695 -8.38212e-05Z" />
+                  <path
+                    d="M58.2413 118.84V118.813C57.1213 115.107 53.2279 113.027 49.5079 114.147C45.8013 115.253 43.7077 119.187 44.8277 122.893C45.7344 125.933 48.5076 127.88 51.5209 127.88C52.1876 127.88 52.8675 127.787 53.5475 127.587C57.2542 126.467 59.3479 122.547 58.2413 118.84Z" />
+                  <path
+                    d="M103.121 40.6532C70.7614 40.6532 43.6684 65.9199 41.4417 98.1733C41.175 102.04 44.0946 105.387 47.948 105.653C48.1213 105.653 48.2817 105.667 48.4417 105.667C52.095 105.667 55.1748 102.84 55.4282 99.1332C57.1482 74.1998 78.0947 54.6798 103.121 54.6798C107.001 54.6798 110.135 51.5332 110.135 47.6665C110.135 43.7998 107.001 40.6532 103.121 40.6532Z" />
+                </g>
+              </svg>
+              <h3 class="text-2xl text-gray-800 my-2">Opšta stomatologija</h3>
+              <p class="text-md text-gray-600">
+                Anim aute id magna aliqua ad ad non
+                deserunt sunt. Qui irure qui lorem cupidatat commodo.
+              </p>
+            </div>
+          </button>
+          <!-- Ortodoncija -->
+          <button
+            class="group relative overflow-hidden rounded-md md:rounded-b-3xl bg-white shadow transition-all hover:shadow-xl hover:-translate-y-1 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-purple-600">
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-white to-purple-50 opacity-0 group-hover:opacity-100 transition-all">
+            </div>
+            <div class="relative px-4 py-12 flex flex-col items-center">
+              <svg viewBox="0 0 360 359" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 text-purple-600 ">
+                <g fill="currentColor">
+                  <path
+                    d="M228.121 134.867V122.947C228.121 119.08 224.988 115.933 221.108 115.933H138.401C134.535 115.933 131.401 119.08 131.401 122.947V134.867H23.6416C14.3483 116.16 14.3348 104.347 14.3348 92.1066C14.3348 49.2133 49.2412 14.3066 92.1478 14.3066C123.881 14.3066 139.188 34.7599 151.481 51.1866C160.321 62.9866 167.948 73.1866 179.761 73.1866C191.561 73.1866 199.188 62.9866 208.028 51.1866C220.335 34.7599 235.642 14.3066 267.375 14.3066C310.268 14.3066 345.175 49.2133 345.175 92.1066C345.175 104.347 345.175 116.16 335.868 134.867H228.121ZM322.335 157.293H228.121V148.88H327.921C326.228 151.56 324.375 154.36 322.335 157.293ZM145.415 176.227V129.96H214.108V176.227H145.415ZM308.842 175.36C291.228 197.547 283.548 235.133 276.108 271.467C268.708 307.693 261.055 345.147 245.535 345.147C229.855 345.147 220.788 312.533 213.508 286.333C205.228 256.573 198.095 230.893 179.761 230.893C161.428 230.893 154.281 256.573 146.015 286.333C138.721 312.533 129.668 345.147 113.975 345.147C98.4683 345.147 90.8015 307.693 83.4015 271.467C75.9615 235.133 68.2815 197.547 50.6682 175.36C49.5748 173.987 48.5214 172.64 47.4947 171.307H131.401V183.227C131.401 187.107 134.535 190.24 138.401 190.24H221.108C224.988 190.24 228.121 187.107 228.121 183.227V171.307H312.028C311.001 172.64 309.935 173.987 308.842 175.36ZM37.1749 157.293C35.1349 154.36 33.2815 151.56 31.6015 148.88H131.401V157.293H37.1749ZM267.375 0.293227C228.628 0.293227 210.241 24.8533 196.815 42.7866C190.495 51.1999 184.548 59.1599 179.761 59.1599C174.975 59.1599 169.015 51.1999 162.708 42.7866C149.282 24.8533 130.895 0.293227 92.1478 0.293227C41.5079 0.293227 0.321289 41.48 0.321289 92.1066C0.321289 116.92 3.14806 138.053 39.6947 184.08C55.2147 203.64 62.8948 241.173 69.6682 274.28C74.0015 295.467 78.0945 315.493 83.9478 330.653C86.6678 337.707 94.9483 359.16 113.975 359.16C126.295 359.16 136.228 351.187 144.335 334.773C150.641 322.027 155.148 305.787 159.521 290.08C163.108 277.16 166.495 264.973 170.495 256.147C173.775 248.893 177.068 244.907 179.761 244.907C182.455 244.907 185.748 248.893 189.028 256.147C193.015 264.973 196.401 277.16 199.988 290.08C204.361 305.787 208.882 322.027 215.175 334.773C223.282 351.187 233.215 359.16 245.535 359.16C264.561 359.16 272.841 337.707 275.561 330.653C281.415 315.493 285.508 295.467 289.855 274.28C296.615 241.173 304.295 203.64 319.828 184.08C356.361 138.053 359.201 116.92 359.201 92.1066C359.201 41.48 318.002 0.293227 267.375 0.293227Z" />
+                  <path
+                    d="M57.921 119.133L57.9079 119.094C56.8013 115.387 52.9076 113.32 49.1876 114.427C45.481 115.534 43.3879 119.48 44.5079 123.187C45.4146 126.214 48.1878 128.174 51.2012 128.174C51.8678 128.174 52.5477 128.067 53.2277 127.867C56.9344 126.76 59.0276 122.827 57.921 119.133Z" />
+                  <path
+                    d="M102.801 40.9334C70.4411 40.9334 43.3476 66.2001 41.1209 98.4534C40.8542 102.32 43.7743 105.667 47.6277 105.933C47.801 105.947 47.9609 105.947 48.1209 105.947C51.7742 105.947 54.8546 103.12 55.1079 99.4134C56.8279 74.4934 77.7744 54.9601 102.801 54.9601C106.668 54.9601 109.814 51.8268 109.814 47.9468C109.814 44.0801 106.668 40.9334 102.801 40.9334Z" />
+                  <path
+                    d="M182.561 142.574H176.961C173.081 142.574 169.948 145.707 169.948 149.587V156.587C169.948 160.467 173.081 163.6 176.961 163.6H182.561C186.428 163.6 189.575 160.467 189.575 156.587V149.587C189.575 145.707 186.428 142.574 182.561 142.574Z" />
+                </g>
+              </svg>
+              <h3 class="text-2xl text-gray-800 my-2">Ortodoncija</h3>
+              <p class="text-md text-gray-600">
+                Anim aute id magna aliqua ad ad non
+                deserunt sunt. Qui irure qui lorem cupidatat commodo.
+              </p>
+            </div>
+          </button>
+        </div>
+
+        <!-- Protetika -->
+        <button
+          class="narrow-service group relative overflow-hidden flex-1 rounded-md rounded-bl-3xl md:rounded-bl-md md:rounded-tr-3xl rounded-br-3xl bg-white shadow transition-all hover:shadow-xl hover:-translate-y-1 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-cyan-600 md:my-16">
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-white to-cyan-50 opacity-0 group-hover:opacity-100 transition-all">
+          </div>
+          <div class="relative px-4 py-5 flex flex-col items-center">
+            <svg viewBox="0 0 360 359" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 text-cyan-600 ">
+              <g fill="currentColor">
+                <path
+                  d="M53.6679 109.507V109.48C52.6813 105.747 48.8545 103.534 45.1078 104.52C41.3745 105.507 39.1344 109.36 40.1211 113.107C40.9477 116.24 43.7878 118.32 46.8945 118.32C47.4812 118.32 48.0812 118.24 48.6812 118.08C52.4279 117.107 54.6546 113.254 53.6679 109.507Z" />
+                <mask id="mask0_275_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="312"
+                  height="361">
+                  <path d="M0.0947266 0.293699H311.095V360.28H0.0947266V0.293699Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_275_2)">
+                  <path
+                    d="M88.2278 38.7739C61.5478 38.7739 39.2278 61.7072 37.4278 90.9872C37.1878 94.8539 40.121 98.1739 43.9877 98.4139C44.1344 98.4272 44.2811 98.4272 44.4278 98.4272C48.0945 98.4272 51.1879 95.5739 51.4145 91.8539C52.7612 69.9472 68.9345 52.7872 88.2278 52.7872C92.0945 52.7872 95.2278 49.6539 95.2278 45.7872C95.2278 41.9072 92.0945 38.7739 88.2278 38.7739Z" />
+                </g>
+                <mask id="mask1_275_2" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="312"
+                  height="361">
+                  <path d="M0.0947266 0.293699H311.095V360.28H0.0947266V0.293699Z" fill="white" />
+                </mask>
+                <g mask="url(#mask1_275_2)">
+                  <path
+                    d="M265.855 151.627L265.601 151.96C246.308 176.32 234.975 182.813 231.321 182.813H79.7079C76.0546 182.813 64.708 176.307 45.428 151.96L45.1746 151.627C14.2146 112.64 14.1613 96.9201 14.1079 81.7201C14.0013 45.5068 42.9479 15.4001 78.6545 14.6135C79.2679 14.6001 79.8814 14.5868 80.4814 14.5868C107.481 14.5868 119.881 28.1468 130.855 40.1335C138.281 48.2535 145.295 55.9068 155.508 55.9068C165.735 55.9068 172.735 48.2535 180.161 40.1335C191.388 27.8801 204.135 13.9735 232.375 14.6135C268.068 15.4001 297.028 45.5068 296.908 81.7201C296.868 96.9201 296.815 112.64 265.855 151.627ZM195.001 329.427C195.001 338.253 187.828 345.427 179.001 345.427H132.028C123.201 345.427 116.028 338.253 116.028 329.427V324.4H195.001V329.427ZM195.001 292.88V310.373H116.028V292.88H195.001ZM195.001 260.613V278.867H116.028V260.613H195.001ZM116.028 214.333V196.827H195.001V214.333H116.028ZM195.001 228.347V246.6H116.028V228.347H195.001ZM288.321 25.1601C273.588 9.7868 253.828 1.0668 232.681 0.586798C198.041 -0.186536 181.068 18.3868 169.815 30.6668C164.081 36.9335 159.561 41.8935 155.508 41.8935C151.468 41.8935 146.935 36.9335 141.201 30.6668C129.961 18.3868 113.001 -0.173202 78.3348 0.586798C57.1881 1.0668 37.428 9.7868 22.6946 25.1601C8.05465 40.4535 0.0279836 60.5468 0.0946502 81.7735C0.161317 102.72 2.64121 120.613 34.1879 160.347L34.4413 160.667C53.4413 184.667 68.6679 196.827 79.7079 196.827H102.001V214.32H101.015C97.148 214.32 94.0014 217.467 94.0014 221.333C94.0014 225.2 97.148 228.347 101.015 228.347H102.001V246.6H101.015C97.148 246.6 94.0014 249.734 94.0014 253.6C94.0014 257.48 97.148 260.613 101.015 260.613H102.001V278.867H101.015C97.148 278.867 94.0014 282 94.0014 285.867C94.0014 289.747 97.148 292.88 101.015 292.88H102.001V310.373H101.015C97.148 310.373 94.0014 313.52 94.0014 317.387C94.0014 321.253 97.148 324.4 101.015 324.4H102.001V329.427C102.001 345.973 115.468 359.44 132.028 359.44H179.001C195.548 359.44 209.015 345.973 209.015 329.427V324.4H210.015C213.881 324.4 217.015 321.253 217.015 317.387C217.015 313.52 213.881 310.373 210.015 310.373H209.015V292.88H210.015C213.881 292.88 217.015 289.747 217.015 285.867C217.015 282 213.881 278.867 210.015 278.867H209.015V260.613H210.015C213.881 260.613 217.015 257.48 217.015 253.6C217.015 249.734 213.881 246.6 210.015 246.6H209.015V228.347H210.015C213.881 228.347 217.015 225.2 217.015 221.333C217.015 217.467 213.881 214.32 210.015 214.32H209.015V196.827H231.321C242.348 196.827 257.588 184.653 276.588 160.667L276.828 160.347C308.375 120.613 310.855 102.72 310.935 81.7735C311.001 60.5468 302.975 40.4535 288.321 25.1601Z" />
+                </g>
+              </g>
+            </svg>
+            <h3 class="text-2xl text-gray-800 my-2">Protetika</h3>
+            <p class="text-md text-gray-600">
+              Anim aute id magna aliqua ad ad non
+              deserunt sunt. Qui irure qui lorem cupidatat commodo.
+            </p>
+          </div>
+        </button>
+      </div>
+
+      <!-- Separator -->
+      <svg class="my-16 md:my-24 mx-auto max-w-80 md:max-w-md" viewBox="0 0 502 32" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <g fill="url(#separator-gradient)">
+          <path
+            d="M234.599 15.9993C243.436 15.9993 250.599 8.83701 250.599 0C250.599 8.83701 257.762 15.9993 266.599 15.9993C257.762 15.9993 250.599 23.163 250.599 32C250.599 23.163 243.436 15.9993 234.599 15.9993Z" />
+          <path
+            d="M216.203 16C220.621 16 224.203 12.419 224.203 8C224.203 12.419 227.784 16 232.203 16C227.784 16 224.203 19.5823 224.203 24C224.203 19.5823 220.621 16 216.203 16Z" />
+          <path
+            d="M277.289 8C277.289 12.419 273.708 16 269.29 16C273.708 16 277.289 19.5823 277.289 24C277.289 19.5823 280.871 16 285.29 16C280.871 16 277.289 12.419 277.289 8Z" />
+          <path
+            d="M6.74629 10C9.71924 10 12.1876 12.1619 12.6636 15H208C208.552 15 209 15.4477 209 16C209 16.5523 208.552 17 208 17H12.6636C12.1876 19.8381 9.71924 22 6.74629 22C3.43269 22 0.746582 19.3143 0.746582 16C0.746582 12.6857 3.43269 10 6.74629 10Z" />
+          <path
+            d="M489.895 17H294C293.448 17 293 16.5523 293 16C293 15.4477 293.448 15 294 15H489.895C490.372 12.1619 492.84 10 495.813 10C499.127 10 501.812 12.6857 501.812 16C501.812 19.3143 499.127 22 495.813 22C492.84 22 490.372 19.8381 489.895 17Z" />
+        </g>
+        <defs>
+          <linearGradient id="separator-gradient" x1="0.075" y1="16" x2="500" y2="16" gradientUnits="userSpaceOnUse">
+            <stop offset="0.375" stop-color="#479784" />
+            <stop offset="1" stop-color="#6FA3F0" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <!-- Team -->
+      <div>
+        <h2 class="text-center text-balance text-4xl md:text-5xl tracking-tight mb-8">
+          Naš <span class="bg-gradient-to-r from-emerald-600 to-blue-400 bg-clip-text text-transparent">
+            porodični
+          </span> tim
+        </h2>
+
+        <div class="flex flex-col gap-8 sm:flex-row sm:items-center">
+
+          <!-- Gallery -->
+          <div class="flex flex-shrink-0 sm:w-1/2">
+            <div class="flex gap-2 md:gap-4 ">
+              <div class="flex-1 flex gap-2 md:gap-4 flex-col items-end pt-8 md:pt-12">
+                <div class=" relative w-3/4">
+                  <img
+                    src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;h=528&amp;q=80"
+                    alt="" class="aspect-[1/1] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+                <div class=" relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=.4&amp;w=396&amp;h=528&amp;q=80"
+                    alt="" class="aspect-[3/2] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+              </div>
+              <div class="flex-1 flex gap-2 md:gap-4 flex-col">
+                <div class=" relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;h=528&amp;q=80"
+                    alt="" class="aspect-[3/2] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+                <div class=" relative w-3/4">
+                  <img
+                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                    alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- Team copy -->
+          <div class="text-lg text-gray-500 md:max-w-sm">
+            <p class="mb-4">
+              Ljubazno osoblje naše stomatološke ordinacije pobrinuće se da Vaša
+              poseta bude obostrano pozitivno iskustvo.
+            </p>
+            <ul class="list-disc ml-10 text-gray-800">
+              <li>
+                Dr Mila Dolaš
+                <div class="text-sm text-gray-400">Specijalista</div>
+              </li>
+              <li>
+                Dr Boris Dolaš
+                <div class="text-sm text-gray-400">Specijalista maksifacijalne hirurgije</div>
+              </li>
+              <li>
+                Dr Davor Dolaš
+                <div class="text-sm text-gray-400">Specijalista ortodoncije</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-white shadow mt-16 md:mt-24 text-center">
+    <div class="mx-auto max-w-6xl py-16 md:py-24 px-6 md:px-8 ">
+
+      <h3 class="text-balance text-xl tracking-tight">
+        Ordinacija
+        <span class="bg-gradient-to-r from-emerald-600 to-blue-400 bg-clip-text text-transparent">
+          Dr Mila
+        </span>
+      </h3>
+
+      <!-- Zakazivanje -->
+      <div>
+        <div class="font-semibold mt-4 mb-2">Zakažite</div>
+        <div class="flex flex-wrap gap-2 items-center justify-center">
+          <button type="button"
+            class="px-4 py-1.5 w-32 rounded-full bg-emerald-600 border border-emerald-700 transition-colors text-sm font-semibold text-white shadow-sm hover:bg-emerald-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">
+            Pregled
+          </button>
+          <span class="text-gray-500">ili</span>
+          <button type="button" data-cal-link="stanko-tadic-zwhbjn/30min" data-cal-namespace="30min"
+            data-cal-config='{"layout":"month_view","theme":"light"}'
+            class="px-4 py-1.5 w-32 rounded-full bg-white border border-gray-300 transition-colors text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-300">
+            Konsultaciju
+          </button>
+        </div>
+      </div>
+
+      <!-- Instagram -->
+      <div class="mb-5 mt-6 flex justify-center space-x-10">
+        <a href="#"
+          class="rounded-md pr-0.5 flex items-center gap-1 text-gray-400 transition-colors hover:text-pink-500 focus-visible:outline-pink-500 focus-visible:text-pink-500">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+              clip-rule="evenodd" />
+          </svg> Instagram
+        </a>
+      </div>
+
+      <!-- Contact -->
+      <div class="text-gray-600 flex flex-col items-center gap-1">
+        <a href="https://maps.app.goo.gl/fG4cHTy1qxkKGJFo8"
+          class="rounded-sm text-gray-600 flex gap-2 items-center hover:underline underline-offset-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+          </svg>
+
+          Strugarska 11, Beograd
+        </a>
+        <a href="tel:+3811122334455"
+          class="rounded-sm text-gray-600 flex gap-2 items-center hover:underline underline-offset-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+          </svg>
+
+          +381 11 2233 4455
+        </a>
+        <a href="mailto:info@drmila.com"
+          class="rounded-sm text-gray-600 flex gap-2 items-center hover:underline underline-offset-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+          </svg>
+
+          info@drmila.com
+        </a>
+        <div>Radno vreme od 11 do 18 časova</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <dialog id="menu" class="relative h-full w-full m-0 bg-transparent">
+    <button tabindex="-1" class="dialog-backdrop absolute inset-0 bg-black bg-opacity-75"></button>
+    <div class="dialog-content relative bg-white p-12 shadow">
+      <nav class="flex gap-2 flex-col">
+        <a href="https://maps.app.goo.gl/fG4cHTy1qxkKGJFo8"
+          class="rounded-sm text-gray-600 flex gap-2 items-center hover:underline underline-offset-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+          </svg>
+
+          Strugarska 11, Beograd
+        </a>
+        <a href="tel:+3811122334455"
+          class="rounded-sm text-gray-600 flex gap-2 items-center hover:underline underline-offset-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+          </svg>
+
+          +381 11 2233 4455
+        </a>
+        <a href="mailto:info@drmila.com"
+          class="rounded-sm text-gray-600 flex gap-2 items-center hover:underline underline-offset-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-5 w-5" viewBox="0 0 16 16">
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+          </svg>
+
+          info@drmila.com
+        </a>
+        <div>Radno vreme od 11 do 18 časova</div>
+      </nav>
+    </div>
+  </dialog>
+
+  <script type="module" src="./js/app.js"></script>
+
+  <!-- Cal element-click embed code begins -->
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "30min", { origin: "https://cal.com" });
+
+
+    // Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
+    // `data-cal-link="stanko-tadic-zwhbjn/30min"`
+    // data-cal-namespace="30min"
+    // `data-cal-config='{"layout":"month_view","theme":"light"}'`
+
+    Cal.ns["30min"]("ui", { "theme": "light", "styles": { "branding": { "brandColor": "#43946c" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+  </script>
+  <!-- Cal element-click embed code ends -->
+</body>
+
+</html>
